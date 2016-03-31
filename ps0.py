@@ -13,28 +13,25 @@ def bool_even_or_odd(number):
 
 def number_of_digits(number):
 	''' Problem #1 '''
-	number = str(number)
-	x = 0
-	for digit in number: # this loop keeps track of the number of digits
-		x = x + 1
-	
-	digits = x
+	x = 1
+	y = 2
+	if number in range(10):
+		digits = 1
+	else:
+		while number not in range(10**x, 10**y):
+			x = x + 1
+			y = y + 1
+			digits = y
 	return(digits)
 
 
 def sum_of_digits(number):
 	''' Problem #2 '''
-	number = str(number)
-	list = []
-	for digit in number:
-		list.append(int(digit))
-
-	x = 0 
-	# x will be the value of the sum of digits
-	# for every item in the list, that number is repeatedly added until the total sum of the digits is reached
-	for eachDigit in list: 
-		x = x + eachDigit
-	return(x)
+	sum = 0
+	while number > 0:
+		sum += number % 10
+		number = number//10
+	return(sum)
 
 
 def sum_less_ints(number):

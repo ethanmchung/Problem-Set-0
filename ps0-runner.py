@@ -12,18 +12,22 @@ print("Is " + str(userNumber) + " an even number?: " + str(ps0.bool_even_or_odd(
 print("\nThis is problem #1")
 userNumber = 333
 print(str(userNumber) + " has " + str(ps0.number_of_digits(userNumber)) + " digits.")
+userNumber = 0
+print(str(userNumber) + " has " + str(ps0.number_of_digits(userNumber)) + " digits.")
 userNumber = 1
 print(str(userNumber) + " has " + str(ps0.number_of_digits(userNumber)) + " digits.")
-userNumber = 666666
+userNumber = 123456789
 print(str(userNumber) + " has " + str(ps0.number_of_digits(userNumber)) + " digits.")
 
 
 print("\nThis is problem #2")
 userNumber = 0
 print("The sum of the digits of " + str(userNumber) + " is {}.".format(ps0.sum_of_digits(userNumber)))
-userNumber = 63
+userNumber = 1
 print("The sum of the digits of " + str(userNumber) + " is {}.".format(ps0.sum_of_digits(userNumber)))
 userNumber = 556473
+print("The sum of the digits of " + str(userNumber) + " is {}.".format(ps0.sum_of_digits(userNumber)))
+userNumber = 642
 print("The sum of the digits of " + str(userNumber) + " is {}.".format(ps0.sum_of_digits(userNumber)))
 
 
@@ -87,6 +91,3 @@ userNumber = 31
 print("Does the sum of the digits of the number " + str(userNumber) + " divide evenly into that same number?: " + str(ps0.sum_evenly(userNumber)))
 userNumber = 42
 print("Does the sum of the digits of the number " + str(userNumber) + " divide evenly into that same number?: " + str(ps0.sum_evenly(userNumber)))
-
-
-
