@@ -10,7 +10,7 @@ print("Is " + str(userNumber) + " an even number?: " + str(ps0.bool_even_or_odd(
 
 
 print("\nThis is problem #1")
-userNumber = 333
+userNumber = 10
 print(str(userNumber) + " has " + str(ps0.number_of_digits(userNumber)) + " digits.")
 userNumber = 0
 print(str(userNumber) + " has " + str(ps0.number_of_digits(userNumber)) + " digits.")

@@ -15,14 +15,18 @@ def number_of_digits(number):
 	''' Problem #1 '''
 	x = 1
 	y = 2
-	if number in range(10):
-		digits = 1
+	if number == 10:
+		return 2
+	
 	else:
-		while number not in range(10**x, 10**y):
-			x = x + 1
-			y = y + 1
-			digits = y
-	return(digits)
+		if number in range(10):
+			digits = 1
+		else:
+			while number not in range(10**x, 10**y):
+				x = x + 1
+				y = y + 1
+				digits = y
+		return(digits)
 
 
 def sum_of_digits(number):
